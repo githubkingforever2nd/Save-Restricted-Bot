@@ -104,7 +104,20 @@ def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 
 			# private
 			if "https://t.me/c/" in message.text:
-				chatid = int("-100" + datas[4])
+				chatid = msg_link.split("/")[-2]
+            			print(chatid)
+           	 		if chatid.isdigit() == True:
+                			if len(chatid) > 3:
+						chatid = int('-100' + str(msg_link.split("/")[-2]))
+                    				print(chatid)
+                			else:
+                    				chatid =int('-100' + str(msg_link.split("/")[-3]))
+                    				print(chatid)
+           		 	else:
+                			chatid = await client.get_chat(msg_link.split("/")[-2])
+                			chatid = chat.id
+                			print(chatid)
+				#chatid = int("-100" + datas[4])
 				
 				if acc is None:
 					bot.send_message(message.chat.id,f"**String Session is not Set**", reply_to_message_id=message.id)
