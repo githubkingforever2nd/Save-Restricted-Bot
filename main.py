@@ -11,9 +11,10 @@ import json
 with open('config.json', 'r') as f: DATA = json.load(f)
 def getenv(var): return os.environ.get(var) or DATA.get(var, None)
 
-bot_token = "6694818926:AAHxUe9nez2VeiCwbcdKh4VXqtQP8e8GWwU" 
-api_hash = "8e6598bb138e8e7890b0fa19d6a152f6" 
-api_id = int(1604400)
+bot_token = "6570166456:AAE0cPk6-LaE7LYwBt_jIyyZ1-TAkwCVMCw" 
+api_hash = "1d50ef27561815931234223886485498" 
+ss = "BQHGoKcAXkyQzW6CUheuFiv2HPUYdb-it9iHVYPVpWOo7Mq_Z7qb1otPSjXFrc5sSdCtKChdsDDthPrOxbiKZHEYf4gjsP7xKlE0a3uh3xIdYfiAaraZTpGN36VEBMM2t2SfqssvphOxMk_LRDY3zqHx0XLp5VfQyXaQ5R9EWRoiE-vyWHwVW_qIksoRqx3XAskq73Z7TQilVH416mLfEdYW4vCKNsPm158JEFNS37H3iPg12N4XPh4-5FFsCx4sHVGte66jgPyP1HAklphfG2bEDyfvt8UIfWzXn422Ljnksq5i2XG5RcSX4n2F_US2rpbNTHneMqyu077-BZZWYM1qXrkHMQAAAAF3NzZJAA"
+api_id = int(29794471)
 bot = Client("mybot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 ss = "BQAYezAABZF39PrvgyidFyaU5vPyBkeuMXlVBkU2pTTOlMDEO4S2MqcdYEVfHsOct6S_z6ZxmepB5ss9S8SZAkkwyxomIvUQLDI8DMdKDJqcma7Q-HNfDay0WtAUMKlxRql-NtCV2P22DWKUlWQk4uuEBQ2xs1nyKJtyajl-ePiMpj3Dzq4I7NcZk_RCAFpVpHHYcF_GjwxXwMXfbor-hftCbwtVR59jIPQzkoJMU-PKLanSrBcotJ_9mIzKZCcEjwANtbrIBaL5FldOg6PtfCHQ4vXPn6s9PtzvVP6p5DZoy5HqTSb35RrPtaONtXRz6OvGs76-Lt3k6psfm0dNiYXdAGUL7AAAAAGGJj8xAA"
